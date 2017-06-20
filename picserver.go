@@ -6,7 +6,6 @@ import (
 	"pictureServer/controller"
 )
 
-
 func main() {
 	e := echo.New()
 
@@ -16,6 +15,5 @@ func main() {
 	e.POST("/upload", controller.UploadFile)
 	e.Static("/files", "files")
 	e.Logger.Fatal(e.Start(":1323"))
-
 
 }
